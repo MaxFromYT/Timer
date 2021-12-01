@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Max's timely timer app</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+		<div class="timer">
+		<button onclick = "hourup()">Up</button>
+		<p id="hours">0</p>
+		<button onclick = "hourdown()">Down</button>
+		<p>Hours</p>
+		</div>
+		<div class="timer">
+		<button onclick = "minuteup()">Up</button>
+		<p id="minutes">0</p>
+		<button onclick = "minutedown()">Down</button>
+		<p>Minutes</p>
+		</div>
+		<div class="timer">
+		<button onclick = "secondup()">Up</button>
+		<p id="seconds">0</p>
+		<button onclick = "seconddown()">Down</button>
+		<p>Seconds</p>
+
+		</div>
+		<div class="clearfix"></div>
+		
+		<button onclick = "starttimer()">START</button>
+		
+
+		<div class="modal" id="myModal">
+			<div class = "modal-content">
+				<p>Time's Up!!!</p>
+				<button>CLOSE</button>
+				<button onclick = "closeModal()">CLOSE</button>
+			</div>
+		</div>
+
+  </body>
+</html>
